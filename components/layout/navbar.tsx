@@ -12,6 +12,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import { ModeToggle } from "../ui/mode-toggle"
 
 const navigationItems = [
   { title: "Home", href: "/" },
@@ -48,7 +49,8 @@ export function Navbar() {
               </NavigationMenuList>
             </NavigationMenu>
           </div>
-          <div className="flex items-center md:absolute md:right-4">
+          <div className="flex items-center space-x-2 md:absolute md:right-4">
+            <ModeToggle />
             <Button asChild className="hidden md:inline-flex" size="sm">
               <Link href="#signup">Sign Up</Link>
             </Button>
@@ -64,7 +66,7 @@ export function Navbar() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="pl-1 pr-0">
-                <SheetTitle className="mb-4">Waitlist Boilerplate</SheetTitle>
+                <SheetTitle />
                 <MobileNav items={navigationItems} setIsOpen={setIsOpen} />
               </SheetContent>
             </Sheet>
@@ -77,7 +79,7 @@ export function Navbar() {
 
 function MobileNav({ items, setIsOpen }: { items: typeof navigationItems; setIsOpen: (open: boolean) => void }) {
   return (
-    <div className="flex flex-col space-y-3">
+    <div className="flex flex-col space-y-3 mt-4 px-2">
       {items.map((item) => (
         <Link
           key={item.title}
