@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Waitlist Boilerplate
 
-## Getting Started
+A modern, responsive waitlist landing page built with Next.js 14, Tailwind CSS, and shadcn/ui. Perfect for collecting early sign-ups for your upcoming product or service.
 
-First, run the development server:
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+![Next.js 14](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8)
 
+## Features
+
+- Next.js 15 App Router
+- Tailwind CSS
+- Shadcn/ui components
+- Dark/Light mode
+
+## Quick Start
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/slackerkids/waitlist-boilerplate.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+cd waitlist-boilerplate
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+waitlist-boilerplate/
+├── app/                    # Next.js app directory
+├── components/            
+│   ├── layout/            # Layout components
+│   ├── sections/          # Page sections
+│   └── ui/                # Reusable UI components
+├── lib/                   # Utility functions
+├── public/                # Static assets
+└── styles/                # Global styles
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Hero Section**: Main landing section with primary call-to-action
+- **Features Section**: Showcase your product's key features
+- **CTA Section**: Secondary call-to-action for conversion
+- **Waitlist Form**: Reusable form component with success modal
+- **Footer**: Site footer with additional waitlist form
 
-## Deploy on Vercel
+## Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Colors**: Update the colors in `tailwind.config.ts`
+2. **Content**: Modify the text in each section component
+3. **Styling**: Adjust the Tailwind classes or modify the shadcn/ui components
+4. **Components**: Add or remove sections as needed
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Lucide Icons](https://lucide.dev/)
