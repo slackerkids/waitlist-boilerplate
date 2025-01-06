@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { WaitlistForm } from "@/components/ui/waitlist-form"
 
 export default function HeroSection() {
   return (
@@ -16,16 +15,8 @@ export default function HeroSection() {
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
             Be the first to experience our game-changing solution. Sign up now and get early access when we launch.
           </p>
-          <div className="max-w-sm space-y-2">
-            <form className="flex flex-row gap-2">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                required
-                className="flex-1"
-              />
-              <Button type="submit">Join Waitlist</Button>
-            </form>
+          <div className="w-full max-w-sm space-y-2">
+            <WaitlistForm />
             <p className="text-xs text-muted-foreground">
               We respect your privacy. Unsubscribe at any time.
             </p>
