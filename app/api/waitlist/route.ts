@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     }
 
     // Inserting email to supabase
-    const { error, statusText, status } = await supabase
+    const { error } = await supabase
       .from("waitlist")
       .insert([{ email: email.toLowerCase() }]);
 
