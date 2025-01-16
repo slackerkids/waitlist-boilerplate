@@ -1,15 +1,16 @@
-# Modern Waitlist Boilerplate
+# Waitlist Boilerplate
 
-A modern, responsive waitlist landing page built with Next.js 14, Tailwind CSS, and shadcn/ui. Perfect for collecting early sign-ups for your upcoming product or service.
+A modern, responsive waitlist landing page built with Next.js, Supabase, Tailwind CSS, and shadcn/ui. Perfect for collecting early sign-ups for your upcoming product or service.
 
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
-![Next.js 14](https://img.shields.io/badge/Next.js-15-black)
+![Next.js 15](https://img.shields.io/badge/Next.js-15-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8)
 
 ## Features
 
 - Next.js 15 App Router
+- Supabase for form submissions
 - Tailwind CSS
 - Shadcn/ui components
 - Dark/Light mode
@@ -53,6 +54,7 @@ waitlist-boilerplate/
 - **Hero Section**: Main landing section with primary call-to-action
 - **Features Section**: Showcase your product's key features
 - **CTA Section**: Secondary call-to-action for conversion
+- **Pricing Section**: Showcase your product pricing structure
 - **Waitlist Form**: Reusable form component with success modal
 - **Footer**: Site footer with additional waitlist form
 
@@ -66,6 +68,7 @@ waitlist-boilerplate/
 ## Tech Stack
 
 - [Next.js](https://nextjs.org/)
+- [Supabase](https://supabase.com)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
