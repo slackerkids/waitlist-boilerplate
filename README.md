@@ -65,7 +65,7 @@ waitlist-boilerplate/
 
 ## Tech Stack
 
-- [Next.js 14](https://nextjs.org/)
+- [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
