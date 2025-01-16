@@ -18,7 +18,7 @@ const navigationItems = [
   { title: "Home", href: "/" },
   { title: "Features", href: "#features" },
   { title: "Pricing", href: "#pricing" },
-  { title: "About", href: "#about" },
+  // { title: "About", href: "#about" },
 ]
 
 export function Navbar() {
@@ -52,7 +52,7 @@ export function Navbar() {
           <div className="flex items-center space-x-2 md:absolute md:right-4">
             <ModeToggle />
             <Button asChild className="hidden md:inline-flex" size="sm">
-              <Link href="#signup">Sign Up</Link>
+              <Link href="#cta">Join now!</Link>
             </Button>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
